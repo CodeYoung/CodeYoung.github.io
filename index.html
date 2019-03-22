@@ -648,153 +648,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/22/hexo-git博客搭建/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Young">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Young的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/22/hexo-git博客搭建/" class="post-title-link" itemprop="url">hexo-git博客搭建步骤</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-22 22:46:53 / 修改时间：22:00:57" itemprop="dateCreated datePublished" datetime="2019-03-22T22:46:53+08:00">2019-03-22</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>工作了快6年了，几次都想写写博客总结一下，今天终于走出第一步了，第一篇就来总结一下利用hexo,git搭建个人博客主要步骤。因为之前已经在github上Fork了一个仓库用于博客，所以，本文就不再写关于Fork博客仓库的内容。</p>
-<h2 id="软件环境准备"><a href="#软件环境准备" class="headerlink" title="软件环境准备"></a>软件环境准备</h2><h3 id="安装node-js-git"><a href="#安装node-js-git" class="headerlink" title="安装node.js,git"></a>安装node.js,git</h3><p>我用的win10，直接去官网下载<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>安装即可。</p>
-<h3 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h3><p>  新建blog文件夹（因为是用的MAC双系统，我直接新建该文件在WIN10系统的C盘），在blog文件夹下新建blog_data文件夹。进入blog_data文件夹并打开git bash使用命令：<br>hexo init初始化hexo。初始化成功后打开_config.yml配置hexo(如下两张图片):<br>    <img src="/2019/03/22/hexo-git博客搭建/图片一.png" title="替换作者名称"><br>    <img src="/2019/03/22/hexo-git博客搭建/图片二.png" title="配置github信息"><br>进入自己的github，选择用于博客的仓库，新建一个分支Hexo(可取其他名称)并复制Master分支的内容，并把Hexo设置为默认分支。然后把该分支(Hexo)克隆到新建的blog文件夹，进入克隆的xxx.github.io文件夹,利用命令git branch可看到当前分支为Hexo。把blog_data的里面的文件全复制到xxx.github.io里面。</p>
-<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>打开文件夹xxx.github.io/source/_posts,新建一个xxx.md进行新的博客撰写。并打开git bash使用命令:<br>hexo g生产静态文件；<br>hexo d提交静态文件到master分支；<br>打开博客主页可发现已经更新到最新的博客</p>
-<h3 id="更新源文件"><a href="#更新源文件" class="headerlink" title="更新源文件"></a>更新源文件</h3><p>上面一个步骤已经更新了github上面博客的静态页面，但是我们需要把源文件也更新到github的Hexo分支。所以打开git bash，进入xxx.github.io文件夹，利用命令：<br>    git add .<br>    git commit ‘说明’<br>    git push origin Hexo<br>同步博客的源文件，以便于在其他地方也能下载最新的博客源文件进行更新</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/22/关于投标的总结/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -886,6 +739,153 @@
 <h3 id="关于投标资格"><a href="#关于投标资格" class="headerlink" title="关于投标资格"></a>关于投标资格</h3><p>进入投标系统，我选择了几个当前正在公示的项目进行了解。几乎每个项目都对投标人（公司）有很多的资格证限制，而且对投标团队的人员和财务会计或者交税证明都有要求，甚至对公司及法人信用评级都有要求</p>
 <h3 id="关于投标的几类项目及其资格证要求"><a href="#关于投标的几类项目及其资格证要求" class="headerlink" title="关于投标的几类项目及其资格证要求"></a>关于投标的几类项目及其资格证要求</h3><h4 id="装修工程类"><a href="#装修工程类" class="headerlink" title="装修工程类"></a>装修工程类</h4><p>装修工程类一般要求的资格：建筑工程施工总承包三级资质<br>其他可能要求的资格：施工企业安全生产许可证等<br>并且对具体实施的人员也有资格要求，如：房屋建筑专业二级等</p>
 <h4 id="医疗系统类"><a href="#医疗系统类" class="headerlink" title="医疗系统类"></a>医疗系统类</h4><p>医疗系统类没有像工程施工类那样的资质要求，但是会对公司注册资本和交税证明等会有要求。最主要的是对投标人与采购人的厉害关系有要求。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/22/hexo-git博客搭建/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Young">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Young的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/22/hexo-git博客搭建/" class="post-title-link" itemprop="url">hexo-git博客搭建步骤</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-22 22:46:53 / 修改时间：22:00:57" itemprop="dateCreated datePublished" datetime="2019-03-22T22:46:53+08:00">2019-03-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>工作了快6年了，几次都想写写博客总结一下，今天终于走出第一步了，第一篇就来总结一下利用hexo,git搭建个人博客主要步骤。因为之前已经在github上Fork了一个仓库用于博客，所以，本文就不再写关于Fork博客仓库的内容。</p>
+<h2 id="软件环境准备"><a href="#软件环境准备" class="headerlink" title="软件环境准备"></a>软件环境准备</h2><h3 id="安装node-js-git"><a href="#安装node-js-git" class="headerlink" title="安装node.js,git"></a>安装node.js,git</h3><p>我用的win10，直接去官网下载<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>安装即可。</p>
+<h3 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h3><p>  新建blog文件夹（因为是用的MAC双系统，我直接新建该文件在WIN10系统的C盘），在blog文件夹下新建blog_data文件夹。进入blog_data文件夹并打开git bash使用命令：<br>hexo init初始化hexo。初始化成功后打开_config.yml配置hexo(如下两张图片):<br>    <img src="/2019/03/22/hexo-git博客搭建/图片一.png" title="替换作者名称"><br>    <img src="/2019/03/22/hexo-git博客搭建/图片二.png" title="配置github信息"><br>进入自己的github，选择用于博客的仓库，新建一个分支Hexo(可取其他名称)并复制Master分支的内容，并把Hexo设置为默认分支。然后把该分支(Hexo)克隆到新建的blog文件夹，进入克隆的xxx.github.io文件夹,利用命令git branch可看到当前分支为Hexo。把blog_data的里面的文件全复制到xxx.github.io里面。</p>
+<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>打开文件夹xxx.github.io/source/_posts,新建一个xxx.md进行新的博客撰写。并打开git bash使用命令:<br>hexo g生产静态文件；<br>hexo d提交静态文件到master分支；<br>打开博客主页可发现已经更新到最新的博客</p>
+<h3 id="更新源文件"><a href="#更新源文件" class="headerlink" title="更新源文件"></a>更新源文件</h3><p>上面一个步骤已经更新了github上面博客的静态页面，但是我们需要把源文件也更新到github的Hexo分支。所以打开git bash，进入xxx.github.io文件夹，利用命令：<br>    git add .<br>    git commit ‘说明’<br>    git push origin Hexo<br>同步博客的源文件，以便于在其他地方也能下载最新的博客源文件进行更新</p>
 
           
         
