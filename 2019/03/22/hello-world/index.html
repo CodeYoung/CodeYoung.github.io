@@ -415,6 +415,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/03/22/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/22/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -490,8 +503,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/22/hexo-git博客搭建/" rel="prev" title="hexo-git博客搭建步骤">
-                hexo-git博客搭建步骤 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/22/关于投标的总结/" rel="prev" title="关于投标的总结">
+                关于投标的总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -513,6 +526,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -772,6 +789,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'Hwu7mYsb6WSQhW0Wkgp26KRi-gzGzoHsz',
+    appKey: 'wccIlpIdsjtNSddVSfpswMTg',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
 
 
   
